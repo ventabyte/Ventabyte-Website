@@ -18,16 +18,25 @@ nav a {
     font-size: 20;
 }
 
-
-/* Dropdown Button */
-.dropbtn {
-background-color: white;
+.langbtn {
+    background-color: white;
   color: black;
-  padding: 20px;
+  padding: 25px;
   font-size: 16px;
   border: none;
   cursor: pointer;
     margin-right: 10px;
+    float: right;
+    font-weight: 600;
+}
+/* Dropdown Button */
+.dropbtn {
+background-color: white;
+  color: black;
+  padding: 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
     float: right;
     font-weight: 600;
 }
@@ -74,12 +83,12 @@ background-color: white;
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
         .dropmenu {display: block}
     nav {display: none}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
     .dropmenu {display: none}
     .dropbtn {display: none}
     nav {display: block}

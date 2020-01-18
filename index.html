@@ -19,11 +19,24 @@
     <a href="contact.html">CONTACT</a>
     <a style="background-color: #4188db; color: white;" href="login.html">LOG IN</a>
             <a style="background-color: #33cc5c; color: white;" href="registration.html">REGISTER</a>
+            <a onclick="drop()" class="dropbtn">EN <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
         </nav>
+        
+            <div style="float: right;" class="dropdown">
+  <button onclick="lang()" class="langbtn">EN <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
+  <div id="langdrop" class="dropdown-content">
+    <a href="es/index.html">ES</a>
+    <a href="fr/index.html">FR</a>
+    <a href="ar/index.html">AR</a>
+      <a href="pt/index.html">PT</a>
+      <a href="no/index.html">NO</a>
+  </div>
+</div>
+        
         <div style="float: right;" class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Home <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
+  <button onclick="drop()" class="dropbtn">Home <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Products</a>
+    <a href="products.html">Products</a>
     <a href="#">Design</a>
     <a href="#">Contact</a>
   </div>
@@ -40,10 +53,13 @@ function closeNav() {
   document.getElementById("overlay").style.display = "none";
 }
         
-function myFunction() {
+function drop() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
+        
+        function lang() {
+            document.getElementById("langdrop").classList.toggle("show");
+        }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {

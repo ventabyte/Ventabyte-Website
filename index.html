@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ventabyte | The Web. Modernized.</title>
+             <script src="https://kit.fontawesome.com/d41bbb1682.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="vicon.jpg">
+    </head>
+    <body>
+        <img src="vicon.jpg" style="float: left; padding: 10px 10px;" alt="Ventabyte Logo" width="50" height="75">
+        <nav>
+            <a href="index.html">HOME</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="design.html">DESIGN</a>
+    <a href="contact.html">CONTACT</a>
+    <a style="background-color: #4188db; color: white;" href="login.html">LOG IN</a>
+            <a style="background-color: #33cc5c; color: white;" href="registration.html">REGISTER</a>
+        </nav>
+        <div style="float: right;" class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Home <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Products</a>
+    <a href="#">Design</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+    </body>
+    <script>
+/* Open */
+function openNav() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("overlay").style.display = "none";
+}
+        
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+    </script>
+</html>

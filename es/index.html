@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <title>Ventabyte | El Web. Modernizado.</title>
+             <script src="https://kit.fontawesome.com/d41bbb1682.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">INICIO</a>
+  <a href="#">SERVICIOS</a>
+  <a href="#">DISEÑO</a>
+  <a href="#">CONTACTO</a>
+    <button class="login"><i class="material-icons">input</i> INGRESA</button>
+</div>
+<div style="background-color: #3486eb">
+    <button onclick="openNav()">MENÚ
+    <br><i class="material-icons">menu</i></button>
+
+       <div style="text-align: center; position: absolute; left: 45%; top: 3px"><img src="../logo2.png" width="87" height="87">
+</div>
+     <div class="dropdown">
+  <button class="dropbtn">ES <i style="vertical-align: middle;" class="material-icons">
+arrow_drop_down
+</i></button>
+  <div class="dropdown-content">
+    <a href="../index.html">English (EN)</a>
+      <a href="fr/index.html">Français (FR)</a>
+          <a href="ar/index.html">العربية (AR)</a>
+    <a href="pt/index.html">Português (PT)</a>
+  </div>
+    </div>
+        </div>
+        <br>
+        <h1>Qué Está Nuevo.</h1>
+<br>
+<div class="newsbox">
+        <img src="e-estonia.jpg" width="100%" height="55%";>
+    <h2>Estonia: Based on Tech</h2>
+    <p>Estonia</p>
+        </div>
+    </body>
+    <script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+    </script>
+</html>

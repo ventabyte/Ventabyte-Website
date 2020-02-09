@@ -12,55 +12,49 @@
     </head>
     <body>
         <img src="vicon.jpg" style="float: left; padding: 10px 10px;" alt="Ventabyte Logo" width="75" height="100">
-        <div class="al">
-            <nav>
+        <nav>
             <a href="index.html">HOME</a>
     <a href="products.html">PRODUCTS</a>
     <a href="design.html">DESIGN</a>
     <a href="contact.html">CONTACT</a>
+            <a href="es/index.html">ES <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
     <a style="background-color: #4188db; color: white;" href="login.html">LOG IN</a>
             <a style="background-color: #33cc5c; color: white;" href="registration.html">REGISTER</a>
-            <a onclick="drop()" class="dropbtn">EN <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
         </nav>
-        <div style="float: right;" class="dropdown">
-  <button onclick="lang()" class="langbtn">EN <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
-  <div id="langdrop" class="dropdown-content">
-      <a href="index.html">EN</a>
-    <a href="es/index.html">ES</a>
-    <a href="fr/index.html">FR</a>
-    <a href="ar/index.html">AR</a>
-      <a href="pt/index.html">PT</a>
-      <a href="no/index.html">NO</a>
-  </div>
-</div>
+        <div style="float: right;" class="dropbtn">home</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+<div>
+
         </div>
-        <div class="al">
-        <div style="float: right;" class="dropdown">
-  <button onclick="drop()" class="dropbtn">Home <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="products.html">Products</a>
-    <a href="#">Design</a>
-    <a href="#">Contact</a>
-  </div>
-                        <div style="float: right;" class="dropdown">
-  <button onclick="lang()" class="langbtn">EN <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
-  <div id="langdrop2" class="dropdown-content">
-      <a href="index.html">EN</a>
-    <a href="es/index.html">ES</a>
-    <a href="fr/index.html">FR</a>
-    <a href="ar/index.html">AR</a>
-      <a href="pt/index.html">PT</a>
-      <a href="no/index.html">NO</a>
-  </div>
-</div>
-</div>
-            
+        <br>
+        <div class="about">
+        <h2>About us</h2>
+        <p>Founded in 2017, we are a creative web development and graphic design agency based in Atlanta, United States. Employing the most contemporary web development languages, we design and construct custom websites for individuals and companies, and we offer services such as content creation and free website maintenance as well.
+<br>
+            <br>
+We recognize that every company is distinctive and that what you offer isn't what makes a company stand out, but how you create an impression.  That's why all our services adapt uniquely to you or your company's needs.
+            </p>
+        </div>
+        <div class="why-us">
+        <h2>Why Ventabyte?</h2>
+        <p>
+We make sure that our pricing is constantly flexible, and can adjust perfectly to your project. That's the main reason we provide the option to build a personalized plan, according to what you need exactly. We believe you shouldn't have to pay for what you don't use and have your website fully functional, maintained and up 100% of the time.
+            </p>
+        </div>
+         <div class="interest">
+        <h2>Interested?</h2>
+        <h3>Check out our products &raquo;</h3>
         </div>
     </body>
     <script>
 /* Open */
 function openNav() {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("menubar").style.display = "block";
 }
 
 /* Close */
@@ -71,24 +65,6 @@ function closeNav() {
 function drop() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-        
-        function lang() {
-            document.getElementById("langdrop").classList.toggle("show");
-        }
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
 
     </script>
 </html>

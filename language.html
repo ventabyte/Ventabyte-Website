@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Ventabyte | The Web. Modernized.</title>
+             <script src="https://kit.fontawesome.com/d41bbb1682.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="icon" href="vicon.jpg">
+    </head>
+    <body>
+        <img src="vicon.jpg" style="float: left; padding: 10px 10px;" alt="Ventabyte Logo" width="75" height="100">
+        <nav>
+            <a href="index.html">BACK</a>
+        </nav>
+        
+        <div style="float: right;" class="dropdown">
+  <button onclick="drop()" class="dropbtn">Home <i style="font-size: 10px;" class="fas fa-chevron-down"></i></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="products.html">Products</a>
+    <a href="#">Design</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+        <h1 style="text-align:center; font-family: 'Muli', sans-serif;">Choose your language.</h1>
+        <a href="es/index.html">
+        <div class="language" href="es/index.html">
+        <h2>Español</h2>
+            <h4>Ver el sitio en español.</h4>
+        </div>
+        </a>
+                <div class="language" href="fr/index.html">
+        <h2>Français</h2>
+            <h4>Regardez le site en français.</h4>
+        </div>
+                        <div class="language" href="ar/index.html">
+        <h2>العربية</h2>
+            <h4>.عرض الموقع باللغة العربية</h4>
+        </div>
+                        <div class="language" href="pr/index.html">
+        <h2>Português</h2>
+            <h4>Veja o local em português</h4>
+        </div>
+                            <div class="language" href="no/index.html">
+        <h2>Norsk</h2>
+            <h4>Vis nettstedet på norsk</h4>
+        </div>
+    </body>
+    <script>
+/* Open */
+function openNav() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+/* Close */
+function closeNav() {
+  document.getElementById("overlay").style.display = "none";
+}
+        
+function drop() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+    </script>
+</html>

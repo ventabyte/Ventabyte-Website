@@ -43,7 +43,7 @@ nav a {
 
 .webwidget {
     background-color: #20BF00;
-    width: 250px;
+    width: 50%;
     margin: 0
     
 }
@@ -103,23 +103,33 @@ padding: 10px;
 
 .graphicwidget {
     background-color: #00C2FF;
-    width: 250px;
+    width: 50%;
     margin: 0
     
 }
 
 .contentwidget {
     background-color: #C600FF;
-    width: 250px;
+    width: 50%;
     margin: 0
     
 }
 
 .techwidget {
     background-color: #EED403;
-    width: 250px;
+    width: 50%;
     margin: 0
     
+}
+
+.webwidget, .graphicwidget, .contentwidget, .techwidget {
+    max-width: 368px;
+    max-height: 800px;
+}
+
+.widget {
+    max-width: 368px;
+    max-height: 390px;
 }
 
 .newsbox {
@@ -187,6 +197,14 @@ h3 {
     color: white;
 }
 
+.left {
+    text-align: left;
+}
+
+.container {
+    display: block;
+}
+
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display: block;}
 @media screen and (min-width: 1081px) {
@@ -195,8 +213,6 @@ h3 {
         .newsbox {display: block};
     .newsbox-mobile {display: none};
     .menubar {display: none};
-    .container {display: block};
-    .container2 {display: none};
 }
 
 @media screen and (max-width: 1080px) {
@@ -207,10 +223,16 @@ h3 {
     .newsbox {display: none};
     .newsbox-mobile {display: block};
     .menubar {display: none};
-        .container {display: none};
-    .container2 {display: block};
 }
 
+@media screen and (min-width: 1296px) {
+    h2 {text-align: center};
+    .container {padding-left: 25%};
+}
+
+@media screen and (max-width: 750px) {
+
+}
 /*
 h3 {
     text-align: center;

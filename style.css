@@ -44,6 +44,7 @@ nav a {
 .webwidget {
     background-color: #20BF00;
     width: 50%;
+    height: 50%;
     margin: 0
     
 }
@@ -104,6 +105,7 @@ padding: 10px;
 .graphicwidget {
     background-color: #00C2FF;
     width: 50%;
+    height: 50%;
     margin: 0
     
 }
@@ -111,6 +113,7 @@ padding: 10px;
 .contentwidget {
     background-color: #C600FF;
     width: 50%;
+    height: 50%;
     margin: 0
     
 }
@@ -118,6 +121,7 @@ padding: 10px;
 .techwidget {
     background-color: #EED403;
     width: 50%;
+    height: 50%;
     margin: 0
     
 }

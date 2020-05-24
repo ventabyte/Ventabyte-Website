@@ -277,24 +277,18 @@ h3 {
   to {opacity: 1}
 }
 
-@media screen and (max-width: 623px) {
+@media screen and (max-width: 1242px) {
     .widget2 {display: none;}
     .widget-container2 {display: none;}
+        nav a {display: none;}
 }
 
-@media screen and (min-width: 624px) {
+@media screen and (min-width: 1243px) {
     .widget {display: none;}
     .widget-container {display: none;}
     .widget2 {display: inline-block;}
     .widget-container2 {display: block;}
-}
-
-@media screen and (max-width: 750px) {
-    nav a {display: none;}
-}
-
-@media screen and (min-width: 751px) {
-    nav a {display: inline-block;}
+        nav a {display: inline-block;}
     .menubtn {display: none;}
 }
 

@@ -16,6 +16,9 @@ nav {
  
 .menubtn {
     display: block;
+    background-color: #34cfeb;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .topbar {
@@ -58,6 +61,7 @@ nav a {
 
 .widget-container2 {
     width: 100%;
+    text-align: center;
 } 
 
   .widget {
@@ -67,6 +71,9 @@ nav a {
       width: 55%;
       max-width: 260px;
       border-radius: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      padding-top: 5px;
       
   }
 
@@ -80,6 +87,7 @@ nav a {
     max-height: 750px;
     border-radius: 10px;
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .widget p, .widget2 p {
@@ -190,13 +198,27 @@ h3 {
     color: white;
 }
 
+.darkmode-btn {
+    right: 0;
+    background-color: black;
+    width: 30px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0eddf0;
+    opacity: 80%;
+    color: white;
+    display: block;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1920px;
+  width: 100%;
+    max-height: 560px;
   position: relative;
-    top: 00;
   margin: auto;
 }
 
@@ -232,54 +254,38 @@ h3 {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
 /* The dots/bullets/indicators */
-.dot {
+.bar {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 30px;
   margin: 0 2px;
   background-color: #bbb;
-  border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .bar:hover {
   background-color: #717171;
 }
 
-.desktop-slideshow-container {
-    width: 100%;
-    position: relative;
-    top: 00;
-    height: 560px;
-    max-height: 560px;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.desktop-mySlides {
-  display: none;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 .vicon {
     float: none;
     text-align: center;
@@ -318,6 +324,7 @@ h3 {
     .widget-container2 {display: block;}
         nav a {display: inline-block;}
     .menubtn {display: none;}
+    .explore {margin-top: 250px;}
 }
 
 @media screen (and min-width: 1920px) {

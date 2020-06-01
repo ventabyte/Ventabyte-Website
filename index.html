@@ -14,18 +14,21 @@
             <div class="vicon">
              <img src="vicon.png" style="margin-left: 25%; margin: 10px; opacity: 1" alt="Ventabyte Logo" width="50" height="75">
             </div>
-            <img class="menubtn" style="float: right; margin-right: 10px; margin-top: 20px;" src="menuicon.png" width="50" height="50" onclick="openNav">
+            <img class="menubtn" style="float: right; margin-right: 10px; margin-top: 20px;" src="menuicon.png" width="50" height="50" onclick="openNav()">
         <nav>
             <a href="index.html">HOME</a>
     <a href="products.html">PRODUCTS</a>
     <a href="design.html">DESIGN</a>
     <a href="contact.html">CONTACT</a>
-            <a href="es/index.html">ES <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
+            <a href="es/index.html">LANGUAGE <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
     <a style="background-color: #4188db; color: white;" href="login.html">LOG IN</a>
             <a style="background-color: #33cc5c; color: white;" href="registration.html">REGISTER</a>
              <br>
         <br>
         </nav>
+            <div id="overlay" class="overlay">
+            <h1>Hola</h1>
+            </div>
             <br>
         <br>
         <br>
@@ -44,29 +47,36 @@
         <br>
                 <br>
 
-
+        <!-- Slideshow container -->
+<div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="desktop-mySlides fade">
+  <div class="mySlides fade">
     <img src="webslide.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <img src="camera.png" style="width:100%">
+    <img src="graphicslide.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
-    <img src="typing.png" style="width:100%">
+    <img src="contentslide.png" style="width:100%">
+  </div>
+    
+    <div class="mySlides fade">
+    <img src="techslide.png" style="width:100%">
   </div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="bar" onclick="currentSlide(1)"></span>
+  <span class="bar" onclick="currentSlide(2)"></span>
+  <span class="bar" onclick="currentSlide(3)"></span>
+    <span class="bar" onclick="currentSlide(4)"></span>
 </div>
-
-
+        </div>
         <br>
-              <h2 style="color: black; text-align: center;"><b>explore</b> our products.</h2>
+              <h2 class="explore" style="color: black; text-align: center;"><b>Explore</b> our products.</h2>
         <div class="widget-container">
   <div class="widget"><img src="web-dev.jpg" width="100%" height="323" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Web Development</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
    <div class="widget"><img src="graphic-design.jpg" width="100%" height="323" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Graphic Design</h3><p>Your fully personalized logo, banner ad, or any other design. Make your brand stand out.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
@@ -83,6 +93,7 @@
             <br>
             <br>
 </div>
+
         <div class="about">
         <h2 class="left" style="padding-top: 20px; font-size: 2em;">About us</h2>
                 <p style="padding-right: 20%; font-size: 1.3em">Founded in 2017, we are a creative web development and graphic design agency based in Atlanta, United States. Employing the most contemporary web development languages, we design and construct custom websites for individuals and companies, and we offer services such as content creation and free website maintenance as well.
@@ -165,7 +176,7 @@ We make sure that our pricing is constantly flexible, and can adjust perfectly t
     <script>
 /* Open */
 function openNav() {
-  document.getElementById("menubar").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
 }
 
 /* Close */
@@ -191,21 +202,6 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-        
-      var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("desktop-mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}    
         
 
     </script>

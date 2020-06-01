@@ -44,12 +44,11 @@
         <br>
                 <br>
 
-        <!-- Slideshow container -->
-<div class="slideshow-container">
+
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <img src="window.png" style="width:100%">
+  <div class="desktop-mySlides fade">
+    <img src="webslide.png" style="width:100%">
   </div>
 
   <div class="mySlides fade">
@@ -65,8 +64,9 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 
+
         <br>
-              <h2 style="color: white; text-align: center;">What are you interested in?</h2>
+              <h2 style="color: black; text-align: center;"><b>explore</b> our products.</h2>
         <div class="widget-container">
   <div class="widget"><img src="web-dev.jpg" width="100%" height="323" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Web Development</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
    <div class="widget"><img src="graphic-design.jpg" width="100%" height="323" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Graphic Design</h3><p>Your fully personalized logo, banner ad, or any other design. Make your brand stand out.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
@@ -76,10 +76,10 @@
             <br>
 </div>
                 <div class="widget-container2">
-  <div class="widget2"><img src="web2.jpg" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Web Development</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
-   <div class="widget2"><img src="graphic2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Graphic Design</h3><p>Your fully personalized logo, banner ad, or any other design.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
-            <div class="widget2"><img src="content2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Content Creation</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
-            <div class="widget2"><img src="tech2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Technical Support</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore">LEARN MORE &#8594;</a></div>
+  <div class="widget2"><img src="web2.jpg" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Web Development</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore2">LEARN MORE &#8594;</a></div>
+   <div class="widget2"><img src="graphic2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Graphic Design</h3><p>Your fully personalized logo, banner ad, or any other design.</p><br><a class="learnmore2">LEARN MORE &#8594;</a></div>
+            <div class="widget2"><img src="content2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Content Creation</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore2">LEARN MORE &#8594;</a></div>
+            <div class="widget2"><img src="tech2.JPG" width="100%" height="100%" style="border-top-left-radius: 10px; border-top-right-radius: 10px;"><br><br><h3>Technical Support</h3><p>Have a 100% custom-developed website created for you or your business.</p><br><a class="learnmore2">LEARN MORE &#8594;</a></div>
             <br>
             <br>
 </div>
@@ -192,7 +192,20 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
         
-        
+      var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("desktop-mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}    
         
 
     </script>

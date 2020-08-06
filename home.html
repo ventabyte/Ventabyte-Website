@@ -30,19 +30,42 @@
         <span class="intro">
          <h1>Let's put your business on the internet.</h1>
         <h3>Make use of Ventabyte's wide variety of web development and design services to create a window for your business online. Start with the essentials like a custom logo and site, and make an impression.</h3>
+            <br>
             <p class="opt">&#8594; VIEW SAMPLE SITES</p>
-            <p class="opt">&#8594; START DESIGNING</p>0
+            <p class="opt">&#8594; START DESIGNING</p>
         </span>
             <br>
-        <span class="computer">
-            <img class="wbsp" style="min-width: 336px; min-height: 192px" src="wbs.png" width="90%">
+<span class="computer">
+            <img style="min-width: 336px; min-height: 192px; margin: 5%; max-width: 576px; max-height: 432px;" src="wbs.png" width="90%">
             </span>
             <br>
         </span>
+        <span class="hcont2">
+        <span class="intro">
+         <h1>Let's put your business on the internet.</h1>
+        <h3>Make use of Ventabyte's wide variety of web development and design services to create a window for your business online. Start with the essentials like a custom logo and site, and make an impression.</h3>
+            <br>
+    <p>&#8594; VIEW SAMPLE SITES</p>
+            <br>
+            <br>
+           <p>&#8594; START DESIGNING</p>
+        </span>
+            <br>
+<span class="computer">
+            <img style="min-width: 336px; min-height: 336px; margin: 5%; max-width: 450px; max-height: 450px;" src="media.png" width="90%">
+            </span>
+            <br>
+        </span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="about">
             <br>
             <br>
-        <h2 class="left" style="margin-top: 30px; font-size: 2.5em;">About us</h2>
+            <br>
+        <h2 class="left" style="font-size: 2.5em;">About us</h2>
                 <p style="padding-right: 20%; font-size: 1.625em">Founded in 2017, we are a creative web development and graphic design agency based in Atlanta, United States. Employing the most contemporary web development languages, we design and construct custom websites for individuals and companies, and we offer services such as content creation and free website maintenance as well.
 <br>
                     <br>
@@ -50,7 +73,7 @@ We recognize that every organization is distinctive and that what you offer isn'
             </p>
         </div>
         <div class="why-us">
-        <h2 class="left" style="padding-top: 20px; font-size: 2.5em;">Why Ventabyte?</h2>
+        <h2 class="left" style="font-size: 2.5em;">Why Ventabyte?</h2>
                 <p style="padding-right: 20%; font-size: 1.625em">At Ventabyte, our main goal is to provide products tailored 100% to your needs. Along with customization of websites and graphic designs, we offer content creation services, so you can focus on your products while we take care of everything else. Another concept we believe in is no extra costs, and that the price you pay for your site should cover hosting, maintenance, and updates.
             </p>
         </div>
@@ -60,48 +83,6 @@ We recognize that every organization is distinctive and that what you offer isn'
         document.getElementById("overlay").style.width = "100%";
         document.getElementById("overlay").style.height = "100%";
     }
-        var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-    var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
         </script>
     </body>
 </html>

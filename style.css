@@ -58,10 +58,11 @@ nav a {
 }
 
 .intro {
-    margin: 5%;
-    width: 60%;
+    width: 100%;
     display: inline;
     float: left;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .intro h1 {
@@ -80,16 +81,19 @@ nav a {
 .opt {
     font-size: 1.25em;
     color: white;
-    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    float: none;
+    width: 100%;
 }
 
 .computer {
-    width: 30%;
-    max-width: 723px;
+    width: 100%;
     height: 100%;
     display: inline;
     float: right;
-    padding: 5%;
+    text-align: left;
 }
 
 .hcont {
@@ -99,134 +103,15 @@ nav a {
     background-image: linear-gradient(to bottom right, #03fc5a, #2ffaf0);
 }
 
+.hcont2 {
+    float: left;
+    width: 100%;
+    display: inline-block;
+    background-image: linear-gradient(to bottom right, #ab00ba, #ff70f5);
+}
+
 .scont {
     padding: 5%;
-}
-
-.expand1 {
-    height: 40px;
-    width: 65%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-    float: right;
-    color: white;
-    background-color: #1e5e16;
-    max-width: 150px;
-}
-
-.expand2 {
-    height: 40px;
-    width: 65%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-    float: right;
-    color: white;
-    background-color: #0c877d;
-    max-width: 150px;
-}
-
-.webdev {
-        width: 95%;
-    margin: 2.5%;
-        height: 78px;
-        background-color: #20e307;
-    }
-
-.webdev h3 {
-    color: white;
-        margin-left: 60px;
-}
-    
-    .sym {
-        float: left;
-        background-color: #1e5e16;
-        width: 15%;
-        max-width: 78px;
-        height: 78px;
-        margin: 0px;
-    }
-.graphics {
-    width: 47%;
-    height: 190px;
-    background-color: #1feddc;
-    margin-left: 10px;
-    padding-bottom: 0px;
-    font-family: 'Muli', sans-serif;
-    float: left;
-}
-
-.moreopt1 {
-    background-color: green;
-    height: 35%;
-    width: 100%;
-    margin-top: 0px;
-}
-
-.moreopt2 {
-    background-color: #14c4b6;
-    height: 35%;
-    width: 100%;
-    margin-top: 0px;
-}
-
-.expand3 {
-    height: 40px;
-    width: 65%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-    float: right;
-    color: white;
-    background-color: #a60c9b;
-    max-width: 150px;
-}
-
-.expand4 {
-    height: 40px;
-    width: 65%;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 30px;
-    float: right;
-    color: white;
-    background-color: #b8b41c;
-    max-width: 150px;
-}
-
-.content {
-    width: 47%;
-    height: 190px;
-    background-color: #ff00ee;
-    margin-left: 10px;
-    padding-bottom: 0px;
-    font-family: 'Muli', sans-serif;
-     float: left;
-}
-
-.tech {
-    width: 47%;
-    height: 190px;
-    background-color: #f5f10a;
-    margin-left: 10px;
-    padding-bottom: 0px;
-    font-family: 'Muli', sans-serif;
-    float: left;
-}
-
-.moreopt3 {
-    background-color: #c418b8;
-    height: 35%;
-    width: 100%;
-    margin-top: 0px;
-}
-
-.moreopt4 {
-    background-color: #d4d015;
-    height: 35%;
-    width: 100%;
-    margin-top: 0px;
 }
 
 p {
@@ -237,7 +122,7 @@ p {
             color: white;
 }
 
-h2, h3 {
+h3 {
     color: white;
 }
 
@@ -322,13 +207,12 @@ h2, h3 {
 }
 
 h2 {
-    padding-left: 10px;
-    font-family: 'Muli', sans-serif;
-    color: black;
-}
-
-h2 {
+    margin-top: 50px;
+    font-family: 'Helvetica Neue';
     font-size: 30px;
+    background: -webkit-linear-gradient(#69e3ff, #fa4beb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -339,12 +223,14 @@ p {
     padding-left: 5%;
     display: inline-block;
 }
+
 .about {
-    background-color: #0295D4;
     padding: 10px;
-    
     width: 100%;
-    color: white;
+}
+
+.about p {
+    color: grey;
 }
 
 .why-us {
@@ -362,6 +248,8 @@ p {
 h3 {
     margin: 0px;
     padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
     font-family: 'Muli', sans-serif;
     color: black;
 }
@@ -468,11 +356,13 @@ h3 {
     nav {display: inline-block}
     .vicon {display: none}
 }
+@media screen and (min-width: 1200px) {
+    .intro {width: 30%; float: left; margin-left: 20%;}
+}
 
-@media screen and (max-width: 1249px) {
-    .intro {width: 100%; float: none;}
-    .hcont {float: none;}
-    .computer {width: 100%;}
+@media screen and (min-width: 1000px) {
+    .hcont {float: none; max-height: 680px;}
+    .computer {width: 40%; float: right; margin-right: 10%;}
     .wbsp {max-width: 624px;}
 }
 /*

@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Muli&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
      <script src="https://kit.fontawesome.com/d41bbb1682.js"></script>
     </head>
     <body>
@@ -25,7 +27,7 @@
             <a href="es/index.html">LANGUAGE <i style="font-size: 10px;" class="fas fa-chevron-down"></i></a>
         <br>
         </nav>
-        <div id="overlay" class="overlay"><p>Hi</p></div>
+        <div id="overlay" class="overlay"><a><h2>HOME</h2></a><a><h2>PRODUCTS</h2></a><a><h2>COLLECTION</h2></a><a><h2>CONTACT</h2></a><a><h2>LANGUAGE</h2></a></div>
         <br>
         <span class="hcont">
         <span class="intro">
@@ -55,7 +57,12 @@
             <br>
         </span>
 <div class="abt">
-        <h2>About us</h2>
+        <h2>WHAT WE DO</h2>
+    <div class="svc-container">
+        <div class="svc"><img src="coding.jpg"><h4>WEBSITES</h4><p>We make use of the most contemporary web coding languages to construct responsive and vibrant websites, as well as designing the user interface.</p><a class="lem"><div class="lem2">LEARN MORE</div>&#8594;</a></div>
+    <div class="svc"><img src="ui.jpg"><h4>Websites</h4><p>We make use of the most contemporary web coding languages to construct responsive and vibrant websites, as well as designing the user interface.</p></div>
+    <div class="svc"><img src="cc.jpg"><h4>Websites</h4><p>We make use of the most contemporary web coding languages to construct responsive and vibrant websites, as well as designing the user interface.</p></div>
+    </div>
     <p>Founded in 2017, we are a creative web development and graphic design agency based in Atlanta, United States. Employing the most contemporary web development languages, we design and construct custom websites for individuals and companies, and we offer services such as content creation and free website maintenance as well.
 
 We recognize that every organization is distinctive and that what you offer isn't what makes a company stand out, but how you create an impression. That's why all our services adapt uniquely to you or your company's needs.</p>
@@ -63,9 +70,10 @@ We recognize that every organization is distinctive and that what you offer isn'
        
 <script>
     
-    function openOverlay {
+    function openOverlay() {
         document.getElementById("overlay").style.width = "100%";
         document.getElementById("overlay").style.height = "100%";
+        document.getElementById("overlay").style.display = "block";
     }
         </script>
     </body>

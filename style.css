@@ -19,6 +19,15 @@ nav {
     width: 0%;
     height: 0%;
         background-color: black;
+    z-index: 3;
+    display: none;
+    padding-top: 300px;
+}
+
+.overlay h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Overpass Mono', monospace;
 }
 
 .menubtn {
@@ -89,7 +98,7 @@ nav a {
     margin-right: 2%;
     text-align: center;
     float: none;
-    width: 96%;
+    width: 92%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -107,7 +116,7 @@ nav a {
     margin-right: 2%;
     text-align: center;
     float: none;
-    width: 96%;
+    width: 92%;
     padding: 10px;
     border-radius: 10px;
 }
@@ -163,69 +172,6 @@ h3 {
     color: white;
 }
 
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slides {
-  width: 100%;
-    padding-top: 100px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 5px;
-  width: 40px;
-  margin: 0 2px;
-  background-color: #bbb;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-        .container {
-  width: 100%;
-  margin-right: 10px;
-  float: left;
-        }
-
-        .container2 {
-  width: 100%;
-  margin-right: 10px;
-  float: left;
-            margin-top: 75px;
-        }
-        
-
-
 .langbtn {
     background-color: white;
   color: black;
@@ -262,18 +208,19 @@ h3 {
 }
 
 .abt {
-    background-color: slategray;
+    background-color: black;
     width: 100%;
-    margin-top: 1000px;
 }
 
 .abt h2 {
-    color: yellow;
+    color: white;
     background-size: 100%;
     font-size: 38px;
-    margin: 30px;
+    margin-top: 50px;
     margin-bottom: 0px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .abt p {
@@ -283,6 +230,7 @@ h3 {
     margin-right: 30px;
     padding: 0px;
 }
+
 .vicon {
     float: none;
     text-align: center;
@@ -290,22 +238,45 @@ h3 {
 
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.svc {
+    display: inline-block;
+    background-color: #575757;
+    margin: 10px;
+    width: 200px;
+
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.svc h4 {
+    color: white;
+    margin: 10px 0px 0px 0px;
+    font-size: 24px;
+    font-family: 'Overpass Mono', monospace;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+.svc p {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.svc-container {
+    text-align: center;
+}
+
+.lem {
+    float: right;
+    padding: 8px;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lem2 {
+    float: left;
+    display: inline;
+    background-color: yellow;
 }
 
 @media screen and (max-width: 540px) {
@@ -329,6 +300,7 @@ h3 {
     .hcont {float: none; max-height: 680px;}
     .computer {width: 40%; float: right; margin-right: 10%;}
     .wbsp {max-width: 624px;}
+    .abt p {font-size: 24px}
 }
 /*
 h3 {

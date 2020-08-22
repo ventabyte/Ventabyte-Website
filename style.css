@@ -207,76 +207,19 @@ h3 {
     color: black;
 }
 
-.abt {
-    background-color: black;
-    width: 100%;
-}
-
-.abt h2 {
-    color: white;
-    background-size: 100%;
-    font-size: 38px;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-family: 'Fira Sans', sans-serif;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.abt p {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 0px;
-}
-
-.vicon {
-    float: none;
-    text-align: center;
-    display: inline-block;
-
-}
-
-.svc {
-    display: inline-block;
-    background-color: #575757;
-    margin: 10px;
-    width: 200px;
-
-}
-
-.svc h4 {
-    color: white;
-    margin: 10px 0px 0px 0px;
-    font-size: 24px;
-    font-family: 'Overpass Mono', monospace;
-}
-
-.svc p {
-    text-align: left;
-    margin-left: 10px;
-    font-size: 16px;
-}
-
-.svc-container {
-    text-align: center;
-}
-
 .lem {
     float: right;
     padding: 8px;
     margin: 20px;
     background-color: black;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
 }
 
-.lem2 {
-    float: left;
-    display: inline;
-    background-color: yellow;
+.lem:hover {
+    background-color: gold;
+    color: black;
 }
 
 @media screen and (max-width: 540px) {
@@ -291,13 +234,27 @@ h3 {
     .topbar {display: none}
     nav {display: inline-block}
     .vicon {display: none}
+    .svc {width: 217px}
+    .svc img {width: 217px; height: 217px}
 }
-@media screen and (min-width: 1200px) {
-    .intro {width: 30%; float: left; margin-left: 20%;}
+
+@media screen and (min-width: 760px) {
+    .svc {width: 305px}
+    .svc img {width: 305px; height: 305px}
+}
+
+@media screen and (min-width: 760px) {
+    .svc {width: 305px}
+    .svc img {width: 305px; height: 305px}
+}
+
+@media screen and (min-width: 1069px) {
+    .svc-container {display: none;}
+    .svc-desktop-container {display: block;}
 }
 
 @media screen and (min-width: 1000px) {
-    .hcont {float: none; max-height: 680px;}
+    .intro {float: left; width: 40%; max-height: 680px; margin-left: 10%;}
     .computer {width: 40%; float: right; margin-right: 10%;}
     .wbsp {max-width: 624px;}
     .abt p {font-size: 24px}
